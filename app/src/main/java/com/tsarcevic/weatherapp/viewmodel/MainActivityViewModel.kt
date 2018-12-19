@@ -12,4 +12,8 @@ class MainActivityViewModel {
     val weatherResponse: MutableLiveData<WeatherResponse> = MutableLiveData()
     val error: MutableLiveData<Boolean> = MutableLiveData()
 
+    fun getWeatherInfo(cityId: kotlin.Int) {
+        weatherInteracion.getWeatherInfo(cityId)
+    }
+
 }

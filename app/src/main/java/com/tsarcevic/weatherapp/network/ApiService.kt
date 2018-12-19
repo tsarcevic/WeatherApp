@@ -8,5 +8,5 @@ import retrofit2.http.Query
 interface ApiService {
 
     @GET("forecast")
-    fun getWeatherInfo(@Query("q") cityName: String): Single<WeatherResponse>
+    fun getWeatherInfo(@Query("id") cityId: kotlin.Int): Single<WeatherResponse>
 }

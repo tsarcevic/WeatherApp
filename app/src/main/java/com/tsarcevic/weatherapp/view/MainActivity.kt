@@ -17,13 +17,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        changeTextView()
-        activity_main_button.setOnClickListener {
-            Toast.makeText(this, "HEHE", Toast.LENGTH_SHORT).show()
-        }
-        activity_main_text.setText("ČUDO")
-    }
 
-    private fun changeTextView() {
     }
 }
